@@ -1,0 +1,21 @@
+The first part of day 1 was pretty simple. i loaded in the individual lines and split them to find if they were going Left or Right. 
+If they're going Left we 're going down, so the point at which we change will be 0
+If they're going Right, we're going up, so the point at which we change will be 99
+Originally, i had 2 while loops to sort this out, which worked fine for the first part; however, it was during the 2nd part that i made the change to use a for loop 
+It is more inefficient, and will be noticable for longer combinations, but it works fine and gives the correct answer
+for the first part we want to find when it ends on a 0, meaning we can ignore Lock when it is in this section of code:
+                    for (int i = 0; i < Integer.parseInt(line); i++) {
+                        Lock += (adder);
+                        if (Lock < 0 || Lock > 99) {//if it goes right on 0, we cannot
+                            Lock += (adder * -100);
+                        }
+                        if (Lock == 0) {
+                            Part2password++;
+                        }
+                    }
+and just look for when it is  0 outside of it
+
+The second part was more difficult, as i was trying to modify my existing while loops to fit into what i needed. this kept causing errors
+where if it started on a 0, it would add multiple times, rather than only once. i spent quite a bit of time on this, and decided in the end
+to use the less efficient option seen above, after failing for several hours to get it to work how i wanted.
+i can think of several better options, but i'm unsure as to how to implement them without breaking the code 
