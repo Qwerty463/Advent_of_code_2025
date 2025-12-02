@@ -4,6 +4,7 @@ public class main {
     public static void main() {
         run();
     }
+
     public static void run() {
         //interface to interact with all 12 days at once
         //makes testing annoying, but looks nice when revisiting the code
@@ -81,18 +82,14 @@ public class main {
                             } else {
                                 switch (command) {
                                     case "Test":
-                                        /*
-
-
-
-                                         */
+                                        day2 test = new day2("Day-2-test.txt");
+                                        System.out.println("Solution for Task1: " + test.getTask1Count()
+                                        +"\nSolution for Task2: " + test.getTask2Count());
                                         break;
                                     case "Solution":
-                                        /*
-
-
-
-                                         */
+                                        day2 solution = new day2("Day-2-solution.txt");
+                                        System.out.println("Solution for Task1: " + solution.getTask1Count()
+                                        +"\nSolution for Task2: " + solution.getTask2Count());
                                         break;
                                     default:
                                         System.out.println("Invalid Input");
@@ -398,6 +395,4 @@ public class main {
             }
         }
     }
-
-
 }
