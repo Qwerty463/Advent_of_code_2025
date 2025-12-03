@@ -5,12 +5,10 @@ import java.util.Scanner;
 public class day3 {
     int Task1Joltage = 0;
     Long Task2Joltage = 0L;
-
     public day3(String Filename) {
         Filename = ("src/resources/" + Filename);
         File file = new File(Filename);
         String line;
-
         if (file.exists()) {
             try (Scanner scanner = new Scanner(file)) {
                 while (scanner.hasNextLine()) {
@@ -26,18 +24,14 @@ public class day3 {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-
         }
     }
-
     public int getTask1Joltage() {
         return Task1Joltage;
     }
-
     public Long getTask2Joltage() {
         return Task2Joltage;
     }
-
     public String assignNums(int Length, int[] Batteries) {
         int[] num = new int[Length];
         int index = 0;
