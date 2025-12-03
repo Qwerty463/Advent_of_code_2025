@@ -15,7 +15,7 @@ public class main {
         while (!exit) {
             exit2 = false;
             System.out.println("""
-                       Which Day would you like to test?\n
+                       Choose a Day!\n
                        Day-1\
                     
                        Day-2\
@@ -84,12 +84,12 @@ public class main {
                                     case "Test":
                                         day2 test = new day2("Day-2-test.txt");
                                         System.out.println("Solution for Task1: " + test.getTask1Count()
-                                        +"\nSolution for Task2: " + test.getTask2Count());
+                                                + "\nSolution for Task2: " + test.getTask2Count());
                                         break;
                                     case "Solution":
                                         day2 solution = new day2("Day-2-solution.txt");
                                         System.out.println("Solution for Task1: " + solution.getTask1Count()
-                                        +"\nSolution for Task2: " + solution.getTask2Count());
+                                                + "\nSolution for Task2: " + solution.getTask2Count());
                                         break;
                                     default:
                                         System.out.println("Invalid Input");
@@ -107,18 +107,14 @@ public class main {
                             } else {
                                 switch (command) {
                                     case "Test":
-                                        /*
-
-
-
-                                         */
+                                        day3 test = new day3("Day-3-test.txt");
+                                        System.out.println("Solution for Task1: " + test.getTask1Joltage()
+                                                +"\nSolution for Task2: "+test.getTask2Joltage());
                                         break;
                                     case "Solution":
-                                        /*
-
-
-
-                                         */
+                                        day3 solution = new day3("Day-3-Solution.txt");
+                                        System.out.println("Solution for Task1: " + solution.getTask1Joltage()
+                                        +"\nSolution for Task2: "+solution.getTask2Joltage());
                                         break;
                                     default:
                                         System.out.println("Invalid Input");
