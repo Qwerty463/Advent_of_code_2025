@@ -109,12 +109,12 @@ public class main {
                                     case "Test":
                                         day3 test = new day3("Day-3-test.txt");
                                         System.out.println("Solution for Task1: " + test.getTask1Joltage()
-                                                +"\nSolution for Task2: "+test.getTask2Joltage());
+                                                + "\nSolution for Task2: " + test.getTask2Joltage());
                                         break;
                                     case "Solution":
                                         day3 solution = new day3("Day-3-Solution.txt");
                                         System.out.println("Solution for Task1: " + solution.getTask1Joltage()
-                                        +"\nSolution for Task2: "+solution.getTask2Joltage());
+                                                + "\nSolution for Task2: " + solution.getTask2Joltage());
                                         break;
                                     default:
                                         System.out.println("Invalid Input");
@@ -132,18 +132,14 @@ public class main {
                             } else {
                                 switch (command) {
                                     case "Test":
-                                        /*
-
-
-
-                                         */
+                                        day4 test = new day4("Day-4-test.txt");
+                                        System.out.println("Solution for Task1:" + test.getTask1Count()
+                                                + "\nSolution for Task2: " + test.getTask2Count());
                                         break;
                                     case "Solution":
-                                        /*
-
-
-
-                                         */
+                                        day4 Solution = new day4("Day-4-Solution.txt");
+                                        System.out.println("Solution for Task1:" + Solution.getTask1Count()
+                                                + "\nSolution for Task2: " + Solution.getTask2Count());
                                         break;
                                     default:
                                         System.out.println("Invalid Input");
@@ -391,4 +387,6 @@ public class main {
             }
         }
     }
+
+
 }
